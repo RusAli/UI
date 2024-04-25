@@ -23,7 +23,7 @@ public class SearchCourse_Test {
   private WebDriver driver;
 
   @Test
-  @DisplayName("Поиск курса по названию = ++")
+  @DisplayName("Поиск курса по названию")
   public void searchOtusCourseByTitle() {
     MainPage mainPage = new MainPage(driver);
     mainPage.open();
@@ -31,7 +31,7 @@ public class SearchCourse_Test {
   }
 
   @Test
-  @DisplayName("Поиск самой поздней специализации")
+  @DisplayName("Поиск поздней специализации")
   public void searchLastOtusSpecializationByDate() {
     MainPage mainPage = new MainPage(driver);
     mainPage.open();
@@ -39,7 +39,7 @@ public class SearchCourse_Test {
   }
 
   @Test
-  @DisplayName("Поиск самой ранней специализации")
+  @DisplayName("Поиск ранней специализации")
   public void searchFirstOtusSpecializationByDate() {
     MainPage mainPage = new MainPage(driver);
     mainPage.open();
