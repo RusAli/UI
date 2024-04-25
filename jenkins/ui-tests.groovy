@@ -46,8 +46,6 @@ timeout(10) {
                 currentBuild.result = 'UNSTABLE'
             }
         }
-        sh "pwd"
-        sh "ls -la"
 
         stage("Publish allure results") {
             allure([
