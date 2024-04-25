@@ -27,6 +27,10 @@ timeout(10) {
             sh "echo REMOTE=${env.getProperty('REMOTE')} >> ./.env"
         }
 
+        stage("Build Docker image") {
+            sh "docker build -t ui_tests:1.0.0 ."
+        }
+
         stage("Run tests") {
             def exitCode = sh(
                     returnStatus: true,
