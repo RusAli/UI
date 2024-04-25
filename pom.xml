@@ -28,7 +28,7 @@
         <allure-junit5.version>2.6.0</allure-junit5.version>
 
         <base.url>https://otus.ru</base.url>
-        <webdriver.remote.url></webdriver.remote.url>
+        <webdriver.remote.url>http://127.0.0.1/wd/hub</webdriver.remote.url>
         <browser>chrome</browser>
         <browser.version>121.0</browser.version>
 
