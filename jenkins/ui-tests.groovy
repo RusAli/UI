@@ -44,13 +44,16 @@ timeout(10) {
                 currentBuild.result = 'UNSTABLE'
             }
         }
+        sh "pwd"
+        sh "ls -la"
+
         stage("Publish allure results") {
             allure([
                     includeProperties: false,
                     jdk: '',
                     properties: [],
                     reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'target/allure-results']]
+                    results: [[path: './allure-results']]
             ])
         }
     }
