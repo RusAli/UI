@@ -37,8 +37,7 @@ timeout(10) {
                     script: """
                         docker run --rm \
                         --env-file ./.env \
-                        --network=host \
-                        -v /root/.m2/repository:/root/.m2/repository \
+                        -v m2:/root/.m2 \
                         -v ./surefire-reports:/home/user/ui_tests/target/surefire-reports \
                         -v ./allure-results:/home/user/ui_tests/target/allure-results \
                         -t ui_tests:1.0.0
