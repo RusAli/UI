@@ -38,7 +38,6 @@ timeout(10) {
                         docker run --rm \
                         --env-file ./.env \
                         -v m2:/root/.m2 \
-                        -v ./surefire-reports:/home/user/ui_tests/target/surefire-reports \
                         -v ./allure-results:/home/user/ui_tests/target/allure-results \
                         -t ui_tests:1.0.0
                     """
