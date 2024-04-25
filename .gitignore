@@ -1,0 +1,9 @@
+.idea
+*.iml
+target
+jenkins/registry
+lib
+.allure
+/results/
+/surefire-reports/
+/infra/surefire-reports/
